@@ -6,7 +6,7 @@ const filesList = []
 fs.readdirSync(config.inputJsonFolderPath).map(file => {
     let data = fs.readFileSync(`${config.inputJsonFolderPath}${file}`, {encoding:'utf8', flag:'r'})
     data = JSON.parse(data)
-    let image = `${config.imageURI}${file.split('.')[0]}.png`
+    let image = `${config.imageURI}${file.split('.')[0]}.${config.ImageFileExt}`
     if (data.hasOwnProperty('image')) {
         data.image = image
     } else {
