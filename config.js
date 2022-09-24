@@ -1,7 +1,7 @@
 module.exports = {
     "inputJsonFolderPath" : "./jsons/",
     "outputJsonFolderPath" : "./output/",
-    "imageURI":"ipfs://QmeMUbbzjxK6Gr85KSr5D65SgkLnESV5U4RVv6Q2vUn2CU/",
+    "imageURI":"ipfs://QmPNCzoM6hq53po8rLG8M64pS3QMUaWN6KxLYuHcVTMDsT/",
     "extension": ".json",
     "ImageFileExt": "png",
     "CollectionName": "Nifty Dogs Alpha", 
