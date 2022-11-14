@@ -1,9 +1,9 @@
 const fs = require('fs')
-const metadata = require('./input/_metadata.json');
+const metadata = require('./input/TM.json');
 
 function makeChanges() {
     const array = metadata.map(item => {
-        item.image = `https://terra-mater.s3.amazonaws.com/aac/${item.edition}.png`;
+        item.image = `https://terra-mater.s3.amazonaws.com/terra-mater/images/images/${item.edition}.png`;
         return item;
     })
     fs.writeFileSync(`./input/output.json`, JSON.stringify(array, null, 4))
